@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    /*background-color: #fff; /* For browsers that do not support gradients*/
+    /*background-image: linear-gradient(to right, #3fb0ac,#b19cd9);*/
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar.sticky{
+    padding: 15px 0;
+    background-color: #fff; /* For browsers that do not support gradients*/
+    background-image: linear-gradient(to right, #3fb0ac,#b19cd9);
+}
+
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar .menu li a{
+    color: #4C0099;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .logo a span{
+    color: #4C0099;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+/* Menu button styling */
+.menu-button{
+    color: crimson;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Home styling */
+.home {
+    display: flex;
+    background: url("Images/background.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(31, 7, 7);
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: #4C0099;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #4C0099;
+    transition: all 0.3s ease;
+
+}
+
+.home .home-content a:hover{
+    color: #fff;
+    background: crimson;
+    border: 2px solid crimson;
+}
+
+/* About styling */
+section{
+    padding: 100px 0;
+}
+.about{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background: url("Images/background5.jpg") no-repeat center;
+
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 3px;
+    background: #fff;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+/*.about .title::after{
+    content: "who i am";
+    position: absolute;
+    padding: 5px;
+    background: #fff;
+    bottom: -7px;
+    left: 50%;
+    font-size: 20px;
+    color: #4C0099;
+    transform: translateX(-50%)
+}*/
+.about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.about .about-content .right{
+    width: 50%;
+
+}
+.about .about-content .right img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-left: 150px;
+
+
+    
+}
+.about .about-content .left{
+    width: 45%;
+
+}
+
+.about .about-content .left .text{
+    font-size: 25px;
+    font-weight: 650;
+    margin-bottom: 10px;
+
+}
+
+.about .about-content .left .text span{
+    color: crimson;
+}
+
+.about .about-content .left p{
+    text-align: justify;
+}
+
+.about .about-content .left a{
+    display: inline-block;
+    background: #4C0099;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #4C0099;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .left a:hover{
+    color: #fff;
+    background: crimson;
+    border: 2px solid crimson;
+}
+
+section{
+    padding: 100px 0;
+}
+.skills{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background: url("Images/background7.jpg") no-repeat center;
+
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.skills .title{
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: #fff;
+    
+}
+
+
+.skills .title::before{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 3px;
+    background: #fff;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%)
+
+}
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 550; 
+    color: #fff;
+
+}
+
+
+.skills .skills-content .left p{
+    color: #fff;
+    text-align: justify;
+    
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 20px;
+}
+
+.skills .skills-content .right .information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: crimson;
+    position: relative;
+}
+
+/* Educational History styling */
+section{
+    padding: 100px 0;
+}
+
+.eh{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background: url("Images/background8.jpg") no-repeat center;
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.eh .title{
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.eh .title::before{
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 3px;
+    background: #fff;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.eh .carousel .card{
+    background: grey;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+.eh .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+
+}
+.eh .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* Contact styling */
+.contact{
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.contact .title::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background: black;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .left{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: #4C0099;
+}
+
+.contact .contact-content .row .info .head{
+    font-weight: 500;
+}
+
+.contact .right form .fields{
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact .right form .textarea{
+    height: 80px;
+}
+
+.contact .right form .name{
+    margin-right: 10px;
+}
+
+.contact .right form .email{
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.contact .right form .button{
+    height: 47px;
+    width: 100%
+}
+
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive media query start*/
+@media (max-width: 1118px){
+    .menu-button{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-button i.active:before{
+        content: "\f00d";
+    }
+    .max-width{
+
+        padding: 0 50px;
+
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: papayawhip;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 15px 0;
+        font-size: 30px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+        
+    }
+    
+    .home .home-content .text-3{
+        font-size: 35px;
+        
+        
+    }
+}
